@@ -1,0 +1,143 @@
+.pointer{
+    cursor:pointer;
+  }
+  
+  .navigation col-lg-12{
+    max-resolution: 10px;
+  }
+  
+  .jumbotron{
+    padding:40px ;
+    border-radius: 5px;
+    background: #cccccc;
+    box-shadow: 2px 2px 1px #ccc;
+  }
+  
+  .navbar-nav .active{
+  
+    border-bottom: 3px solid orange ;
+  }
+  
+  h3 a{
+    color: blak;
+    text-decoration: none;
+  }
+  
+  .image_for_edit img{
+    width: 60px;
+  }
+  
+  .avatar{
+    width: 35px;
+    height: 35px;
+    border-radius: 700px;
+    overflow: hidden;
+    margin-top: 9px;
+    margin-right: 2px;
+  }
+  .avatar img{
+    height:45px;
+  }
+  
+  .navbar-default .navbar-nav>li>a:hover{
+    transition: all 300ms;
+    border-bottom: 3px solid orange ;
+  }
+  .animal-image-mask,
+  .keeper-image-mask{
+    width:100%;
+    height:200px;
+    overflow: :hidden;
+  }
+  
+  .animal-image-mask img,
+  .keeper-image-mask{
+      max-height: 400px;
+  }
+  
+  .eye1{
+    position:absolute;
+    height:100px;
+    width:100px;
+    top: 90px;
+    left : 240px;
+    z-index: 1;
+  }
+
+  .eye2{
+    position:absolute;
+    height:100px;
+    width:100px;
+    top: 330px;
+    left : 340px;
+    z-index: 1;
+  }
+  
+  .heaven
+  {
+    position:absolute;
+    height:300px;
+    width:300px;
+    z-index: -1;
+  }
+  
+  .boton_transiciones{
+    padding: 10px;
+    background: red;
+    color: white;
+    border-radius: 10px;
+    border: 4px solid blue;
+    transition: all 2s;
+    display: block;
+    width: 100px;
+  }
+  .boton_transiciones:hover{
+    text-decoration: none;
+    color: white;
+    cursor:pointer;
+    border-radius:2px;
+    background: #ccc;
+    border: 1px solid red;
+  }
+  
+  
+  .caja_animada{
+    margin-top: 15px;
+    background: : green;
+    border: 5px solid black;
+    width: 200px;
+    height: 200px;
+    animation-name: deslizamiento;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+  
+  }
+  
+  @@keyframes rotacion {
+    from{
+      transform: rotate(0deg);
+    }
+    to{
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes deslizamiento {
+    0% {
+      margin-left: 0px
+      }
+    25% {
+      margin-left: 400px;
+      background: red;
+      border-radius: 1000px;
+    }
+    75%{
+      margin-left: 0px;
+      background: yellow;
+    }
+  
+    100%{
+      background: green;
+    }
+  }
+  
