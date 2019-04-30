@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>CursoAngular4</title>
+  <title>VFair</title>
   <base href="/">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,36 +19,36 @@
 
 
   <link rel="stylesheet" href="./DemoVFair/assets/css/styles.css">
+  <style type="text/css">
+    html, body {
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+ 
+    #full-screen-background-image {
+        z-index: -999;
+        width: 100%;
+        height: auto;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+   </style>
 </head>
 <body>
-
-  
-<div class="navigation col-lg-12">
-  <nav class="navbar navbar-default">
-      <div class="container-fluid">
+<img alt="full screen background image" src="C:\Users\Jean\Documents\FeriaVirtual\background1.jpg" id="full-screen-background-image" />
+<div class="navigation col-lg-12">   
         <div class="navbar-header">
             <a  class="navbar-brand">
-            {{LOGOTIPO HERE !!!!! }}
+
           </a>
         </div>
 
         <ul class="nav navbar-nav">
-          <li><a >
-            <span class="glyphicon glyphicon-home"  ></span>
-            Inicio</a></li>
-          <li><a >
-            <span class="glyphicon glyphicon-star" ></span>Animales</a>
-          </li>
-          <li><a >
-            <span class="glyphicon glyphicon-comment"  ></span>Contacto</a>
-          </li>
-          <li><a >
-            <span class="glyphicon glyphicon-user" > </span>xxxxxxxx</a>
-          </li>
-          <li><a >
-            <span class="glyphicon glyphicon-gift"  ></span>Tienda</a>
-          </li>
 
+   
         </ul>
         <ul class="nav navbar-nav navbar-right" >
           <li><a >
@@ -60,13 +60,8 @@
 
         </ul>
         <ul class="nav navbar-nav navbar-right" >
-          <li class="avatar">
-              <img src="TU IMAGEN HERE"  />
-          </li>
+
           <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-              {{identity.name}} <span class="caret"></span>
-            </a>
             <ul class="dropdown-menu">
               <li >
                 <a  >
@@ -89,32 +84,17 @@
       </div>
   </nav>
 </div>
-
-<div class="container">
-    <div class="row">
-        <img src="./DemoVFair/assets/pictures/Fondo1.png" width="100%"  >
-        <img src="https://cdne.diariocorreo.pe/thumbs/uploads/img/2018/07/31/nasa-da-a-conocer-el-sonido-que-emite-el-sol-audio-833311-902519-jpg_604x0.jpg" class='eye1'/>
-        <img src="https://cdne.diariocorreo.pe/thumbs/uploads/img/2018/07/31/nasa-da-a-conocer-el-sonido-que-emite-el-sol-audio-833311-902519-jpg_604x0.jpg" class='eye2'/>  
-    </div>
-     <div class="row">
-        
-    </div>
-        
-    </div>
 </div>
 <div style="text-align:center">
-
-
 </div>
-
-
 <hr>
 
 <!-- <tienda></tienda> -->
 <div class="col-lg-11">
   <router-outlet></router-outlet>
 </div>
-
-
 </body>
+<button type="button" class="btn btn-secondary" style="position: absolute;top: 50%; left: 50% " >PABELLONES</button>
+<button type="button" class="btn btn-secondary" style="position: absolute;top: 25%; left: 25% ">TIENDAS</button>
+<button type="button" class="btn btn-secondary" style="position: absolute;top: 75%; left: 75% ">MENSAJES</button>
 </html>
