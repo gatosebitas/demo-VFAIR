@@ -1,118 +1,47 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>CursoAngular4</title>
-  <base href="/">
-
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-
-  <!-- cargar librerias -->
-  <script
-  src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
-  integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
-  crossorigin="anonymous"></script>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> 
- <!-- <script type="text/javascript" src="assets/bootstrap/bootstrap.min.js">  </script> -->
-
-
-  <link rel="stylesheet" href="./DemoVFair/assets/css/styles.css">
+  <title>page2</title>
+  
+  <link href="./assets/dist/css/animsition.min.css" rel="stylesheet">
 </head>
 <body>
 
-  
-<div class="navigation col-lg-12">
-  <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <div class="navbar-header">
-            <a  class="navbar-brand">
-            {{LOGOTIPO HERE !!!!! }}
-          </a>
-        </div>
-
-        <ul class="nav navbar-nav">
-          <li><a >
-            <span class="glyphicon glyphicon-home"  ></span>
-            Inicio</a></li>
-          <li><a >
-            <span class="glyphicon glyphicon-star" ></span>Animales</a>
-          </li>
-          <li><a >
-            <span class="glyphicon glyphicon-comment"  ></span>Contacto</a>
-          </li>
-          <li><a >
-            <span class="glyphicon glyphicon-user" > </span>xxxxxxxx</a>
-          </li>
-          <li><a >
-            <span class="glyphicon glyphicon-gift"  ></span>Tienda</a>
-          </li>
-
-        </ul>
-        <ul class="nav navbar-nav navbar-right" >
-          <li><a >
-            <span class="glyphicon glyphicon-user"  ></span> Registro</a>
-          </li>
-          <li><a >
-            <span class="glyphicon glyphicon-log-in"  ></span> Login</a>
-          </li>
-
-        </ul>
-        <ul class="nav navbar-nav navbar-right" >
-          <li class="avatar">
-              <img src="TU IMAGEN HERE"  />
-          </li>
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-              {{identity.name}} <span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu">
-              <li >
-                <a  >
-                  <span class="glyphicon glyphicon-tasks"  >
-                  </span>Administración
-                </a>
-              </li>
-              <li>
-
-                <a ></span>Mis datos</a>
-              </li>
-              <li>
-
-                <a class="pointer"> <span class="glyphicon glyphicon-log-out"  ></span> Salir</a>
-              </li>
-            </ul>
-          </li>
-
-        </ul>
-      </div>
-  </nav>
-</div>
-
-<div class="container">
-    <div class="row">
-        
-    </div>
-     <div class="row">
-        
-    </div>
-        
-    </div>
-</div>
-<div style="text-align:center">
-
-
-</div>
-
-
-<hr>
-
-<!-- <tienda></tienda> -->
-<div class="col-lg-11">
-  <router-outlet></router-outlet>
-</div>
-
+   <div class="animsition">
+    <a href="./index.html" class="animsition-link">animsition link 1</a>
+    <a href="./page2" class="animsition-link">animsition link 2</a>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+  <script src="./assets/dist/js/animsition.min.js" charset="utf-8"></script>
+  <script>
+  $(document).ready(function() {
+  $(".animsition").animsition({
+    inClass: 'zoom-in',
+    outClass: 'zoom-out',
+    inDuration: 1500,
+    outDuration: 800,
+    linkElement: '.animsition-link',
+    // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+    loading: true,
+    loadingParentElement: 'body', //animsition wrapper element
+    loadingClass: 'animsition-loading',
+    loadingInner: '', // e.g '<img src="loading.svg" />'
+    timeout: false,
+    timeoutCountdown: 5000,
+    onLoadEvent: true,
+    browser: [ 'animation-duration', '-webkit-animation-duration'],
+    // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+    // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+    overlay : false,
+    overlayClass : 'animsition-overlay-slide',
+    overlayParentElement : 'body',
+    transition: function(url){ window.location.href = url; }
+  });
+});
+  </script>
 
 </body>
 </html>
