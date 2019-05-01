@@ -1,74 +1,111 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>VFair</title>
-  <base href="/">
+  <head>
+    <meta charset="utf-8">
+    <title>VFair</title>
+    <base href="/">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- <link rel="icon" type="image/x-icon" href="favicon.ico">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="icon" type="image/x-icon" href="favicon.ico">-->
 
-  <!-- cargar librerias -->
+    <!-- cargar librerias -->
 
-  <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
-  <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="./DemoVFair/assets/css/styles.css">
-  
-</head>
-<body>
-<img alt="full screen background image" src="./DemoVFair/assets/pictures/background1.jpg" id="full-screen-background-image" />
-<div class="navigation col-lg-12">   
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="./DemoVFair/assets/css/styles.css">
+    <link href="./assets/dist/css/animsition.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <img alt="full screen background image" src="./DemoVFair/assets/pictures/background1.jpg" id="full-screen-background-image"/>
 
-        <div class="container-fluid">
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
         <div class="navbar-header">
-            <a  class="navbar-brand">
-            	VFAIR
+          <a  class="navbar-brand">
+            VFAIR
           </a>
         </div>
- <ul class="nav navbar-nav">
-          <li><a >
-            <span class="glyphicon glyphicon-home"  ></span>
-            Inicio</a></li>
-          <li><a >
-            <span class="glyphicon glyphicon-star" ></span>Animales</a>
+        <ul class="nav navbar-nav">
+          <li>
+            <a >
+              <span class="glyphicon glyphicon-home"  ></span>Inicio</a>
           </li>
-          <li><a >
-            <span class="glyphicon glyphicon-comment"  ></span>Contacto</a>
+          <li>
+            <a >
+              <span class="glyphicon glyphicon-star" ></span>Preferencias</a>
           </li>
-          <li><a >
-            <span class="glyphicon glyphicon-user" > </span>xxxxxxxx</a>
+          <li>
+            <a >
+              <span class="glyphicon glyphicon-comment"  ></span>Contacto</a>
           </li>
-          <li><a >
-            <span class="glyphicon glyphicon-gift"  ></span>Tienda</a>
+          <li>
+            <a >
+              <span class="glyphicon glyphicon-user" ></span>Amigos</a>
           </li>
-   
+
         </ul>
         <ul class="nav navbar-nav navbar-right" >
-          <li><a >
-            <span class="glyphicon glyphicon-user"  ></span> Registro</a>
+          <li>
+            <a >
+              <span class="glyphicon glyphicon-user"  ></span> Registro</a>
           </li>
-          <li><a >
-            <span class="glyphicon glyphicon-log-in"  ></span> Login</a>
+          <li>
+            <a >
+              <span class="glyphicon glyphicon-log-in"  ></span> Login</a>
           </li>
 
         </ul>
-     
-      </div>
-  </nav>
-</div>
-</div>
-<div style="text-align:center">
-</div>
-<hr>
 
-<!-- <tienda></tienda> -->
-<div class="col-lg-11">
-  <router-outlet></router-outlet>
-</div>
-</body>
-<button type="button" class="btn btn-secondary" style="position: absolute;top: 50%; left: 50% "><span class="glyphicon glyphicon-home"  ></span>&nbsp;PABELLONES</button>
-<button type="button" class="btn btn-secondary" style="position: absolute;top: 25%; left: 25% "><span class="glyphicon glyphicon-gift"  ></span>&nbsp;TIENDAS</button>
-<button type="button" class="btn btn-secondary" style="position: absolute;top: 75%; left: 75% "><span class="glyphicon glyphicon-comment"></span>&nbsp;MENSAJES</button>
-</html>
+      </div>
+    </nav>
+
+    <!-- <tienda></tienda> -->
+    <div class="col-lg-11">
+      <router-outlet></router-outlet>
+    </div>
+    <div class="animsition">
+      <a href="./DemoVFair/page2.html" class="animsition-link">
+        <button type="button" class="btn btn-secondary" style="position: absolute;top: 50%; left: 50% ">
+          <span class="glyphicon glyphicon-home"  ></span>&nbsp;PABELLONES</button>
+      </a>
+      <button type="button" class="btn btn-secondary" style="position: absolute;top: 25%; left: 25% ">
+        <span class="glyphicon glyphicon-gift"  ></span>&nbsp;TIENDAS</button>
+      <button type="button" class="btn btn-secondary" style="position: absolute;top: 75%; left: 75% ">
+        <span class="glyphicon glyphicon-comment"></span>&nbsp;MENSAJES</button>
+
+      <script src="./assets/dist/js/animsition.min.js" charset="utf-8"></script>
+      <script>
+        $(document).ready(function () {
+          $(".animsition").animsition({
+            inClass: 'zoom-in',
+            outClass: 'zoom-out',
+            inDuration: 1500,
+            outDuration: 800,
+            linkElement: '.animsition-link',
+            // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+            loading: true,
+            loadingParentElement: 'body', //animsition wrapper element
+            loadingClass: 'animsition-loading',
+            loadingInner: '', // e.g '<img src="loading.svg" />'
+            timeout: false,
+            timeoutCountdown: 5000,
+            onLoadEvent: true,
+            browser: [
+              'animation-duration', '-webkit-animation-duration'
+            ],
+            // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+            // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+            overlay: false,
+            overlayClass: 'animsition-overlay-slide',
+            overlayParentElement: 'body',
+            transition: function (url) {
+              window.location.href = url;
+            }
+          });
+        });
+      </script>
+    </body>
+  </html>

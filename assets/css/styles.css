@@ -100,18 +100,7 @@
     border: 1px solid red;
   }
   
-  
-  .caja_animada{
-    margin-top: 15px;
-    background: : green;
-    border: 5px solid black;
-    width: 200px;
-    height: 200px;
-    animation-name: deslizamiento;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-  
-  }
+
   
   @@keyframes rotacion {
     from{
@@ -154,5 +143,33 @@
     position: fixed;
     top: 0;
     left: 0;
+}
+
+.stand1{
+  position:absolute;  
+  top: 218%;
+  left : 32%;
+  z-index: 1;
+}
+
+.stand2{
+  position:absolute;  
+  top: 215%;
+  left : 67%;
+  z-index: 1;
+}
+
+.stand3{
+  position:absolute;  
+  top: 440%;
+  left : 20%;
+  z-index: 1;
+}
+
+.stand4{
+  position:absolute;  
+  top: 440%;
+  left : 81%;
+  z-index: 1;
 }
   
