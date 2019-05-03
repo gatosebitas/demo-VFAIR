@@ -17,7 +17,6 @@
 
     </head>
     <body>
-        <img alt="full screen background image" src="assets/pictures/background1.jpg" id="full-screen-background-image"/>
 
         <!-- inicio del navbar -->
         <nav class="navbar navbar-inverse">
@@ -77,36 +76,40 @@
                     <span class="glyphicon glyphicon-comment"></span>&nbsp;MENSAJES</button>
             </div>
         </div>
-        <script src="assets/dist/js/animsition.min.js" charset="utf-8"></script>
-        <script>
-            $(document).ready(function () {
-                $(".animsition").animsition({
-                    inClass: 'zoom-in',
-                    outClass: 'zoom-out',
-                    inDuration: 1500,
-                    outDuration: 800,
-                    linkElement: '.animsition-link',
-                    // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
-                    loading: true,
-                    loadingParentElement: 'body', //animsition wrapper element
-                    loadingClass: 'animsition-loading',
-                    loadingInner: '', // e.g '<img src="loading.svg" />'
-                    timeout: false,
-                    timeoutCountdown: 5000,
-                    onLoadEvent: true,
-                    browser: [
-                        'animation-duration', '-webkit-animation-duration'
-                    ],
-                    // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
-                    // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
-                    overlay: false,
-                    overlayClass: 'animsition-overlay-slide',
-                    overlayParentElement: 'body',
-                    transition: function (url) {
-                        window.location.href = url;
-                    }
-                });
+        <video muted autoplay="autoplay" loop="loop" id="video_background" preload="auto" volume="50"/>
+        <source src="assets/videos/home.ogv" type="video/ogg">
+        <source src="assets/videos/home.mp4" type="video/mp4"/>
+    </video/>
+    <script src="assets/dist/js/animsition.min.js" charset="utf-8"></script>
+    <script>
+        $(document).ready(function () {
+            $(".animsition").animsition({
+                inClass: 'zoom-in',
+                outClass: 'zoom-out',
+                inDuration: 1500,
+                outDuration: 800,
+                linkElement: '.animsition-link',
+                // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+                loading: true,
+                loadingParentElement: 'body', //animsition wrapper element
+                loadingClass: 'animsition-loading',
+                loadingInner: '', // e.g '<img src="loading.svg" />'
+                timeout: false,
+                timeoutCountdown: 5000,
+                onLoadEvent: true,
+                browser: [
+                    'animation-duration', '-webkit-animation-duration'
+                ],
+                // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+                // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+                overlay: false,
+                overlayClass: 'animsition-overlay-slide',
+                overlayParentElement: 'body',
+                transition: function (url) {
+                    window.location.href = url;
+                }
             });
-        </script>
-    </body>
+        });
+    </script>
+</body>
 </html>
