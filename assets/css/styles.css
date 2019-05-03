@@ -105,18 +105,7 @@
     border: 1px solid red;
   }
   
-  
-  .caja_animada{
-    margin-top: 15px;
-    background: : green;
-    border: 5px solid black;
-    width: 200px;
-    height: 200px;
-    animation-name: deslizamiento;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-  
-  }
+
   
   @@keyframes rotacion {
     from{
@@ -145,12 +134,75 @@
       background: green;
     }
   }
+
+  html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#full-screen-background-image {
+    z-index: -999;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.stand1{
+  position:absolute;  
+  top: 218%;
+  left : 32%;
+  z-index: 1;
+}
+
+.stand2{
+  position:absolute;  
+  top: 215%;
+  left : 67%;
+  z-index: 1;
+}
+
+.stand3{
+  position:absolute;  
+  top: 440%;
+  left : 20%;
+  z-index: 1;
+}
+
+.stand4{
+  position:absolute;  
+  top: 440%;
+  left : 81%;
+  z-index: 1;
+}
+
+.zoom{
+        /* Aumentamos la anchura y altura durante 2 segundos */
+        transition: width 2s, height 2s, transform 2s;
+        -moz-transition: width 2s, height 2s, -moz-transform 2s;
+        -webkit-transition: width 4s, height 4s, -webkit-transform 4s;
+        -o-transition: width 2s, height 2s,-o-transform 2s;
+    }
+    .zoom:hover{
+        /* tranformamos el elemento al pasar el mouse por encima al doble de
+           su tamaño con scale(2). */
+        transform : scale(2);
+        -moz-transform : scale(2);      /* Firefox */
+        -webkit-transform : scale(4);   /* Chrome - Safari */
+        -o-transform : scale(2);        /* Opera */
+    }
+.contenedor:hover .imagen {-webkit-transform:scale(1.3);transform:scale(1.3);}
+.contenedor {overflow:hidden;}
+
   
-  button.b1 {
+button.b1 {
     background-color: #DDDDDD;
     height: 150px;
     left: 50px;
     position: relative;
     top: -500px;
     width: 1500px;
-  }
+}
