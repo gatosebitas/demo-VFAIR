@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -17,10 +17,27 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="./DemoVFair/assets/css/styles.css">
     <link href="./assets/dist/css/animsition.min.css" rel="stylesheet">
+      <style type="text/css">
+    html, body {
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+ 
+    #full-screen-background-image {
+        z-index: -999;
+        width: 100%;
+        height: auto;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+   </style>
   </head>
   <body>
+    <img alt="full screen background image" src="C:\VFAIR-master\assets\pictures\background1.jpg" id="full-screen-background-image"/>
     <div class="contenedor">
-    <img class="imagen" alt="full screen background image" src="./DemoVFair/assets/pictures/background1.jpg" id="full-screen-background-image"/>
     </div>
 <!-- inicio del navbar -->
     <nav class="navbar navbar-inverse">
@@ -70,18 +87,32 @@
     </div>
     <div class="animsition">
       
+<<<<<<< HEAD
       <a href="./DemoVFair/page2.html" class="animsition-link">
+=======
+
+      <a href="C:\VFAIR-master\page2.html" class="animsition-link">
+>>>>>>> 1fa75e33c32c89e468350cb616e9ee02db042d93
         
         <button type="button" class="btn btn-secondary" style="position: absolute;top: 50%; left: 50% ">
           <span class="glyphicon glyphicon-home"  ></span>&nbsp;PABELLONES</button>
         
       </a>
+<<<<<<< HEAD
 
       <button type="button" class="btn btn-secondary" style="position: absolute;top: 25%; left: 25% ">
         <span class="glyphicon glyphicon-gift"  ></span>&nbsp;TIENDAS</button>
       <button type="button" class="btn btn-secondary" style="position: absolute;top: 75%; left: 75% ">
         <span class="glyphicon glyphicon-comment"></span>&nbsp;MENSAJES</button>
 
+=======
+
+      <button type="button" class="btn btn-secondary" style="position: absolute;top: 25%; left: 25% ">
+        <span class="glyphicon glyphicon-gift"  ></span>&nbsp;TIENDAS</button>
+      <button type="button" class="btn btn-secondary" style="position: absolute;top: 75%; left: 75% ">
+        <span class="glyphicon glyphicon-comment"></span>&nbsp;MENSAJES</button>
+    </div>
+>>>>>>> 1fa75e33c32c89e468350cb616e9ee02db042d93
       <script src="./assets/dist/js/animsition.min.js" charset="utf-8"></script>
       <script>
         $(document).ready(function () {
