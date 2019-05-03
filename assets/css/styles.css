@@ -153,21 +153,21 @@
 
 .stand1{
   position:absolute;  
-  top: 218%;
+  top: 248%;
   left : 32%;
   z-index: 1;
 }
 
 .stand2{
   position:absolute;  
-  top: 215%;
+  top: 245%;
   left : 67%;
   z-index: 1;
 }
 
 .stand3{
   position:absolute;  
-  top: 440%;
+  top: 480%;
   left : 20%;
   z-index: 1;
 }
@@ -176,6 +176,25 @@
   position:absolute;  
   top: 440%;
   left : 81%;
+  z-index: 1;
+}
+
+.tiendas{
+  position:absolute;
+  top: 115px;
+  left : 167px;
+  z-index: 1;
+}
+.pabellones{
+  position:absolute;  
+  top: 215px;
+  left : 417px;
+  z-index: 1;
+}
+.mensajes{
+  position:absolute;  
+  top: 370px;
+  left : 71%;
   z-index: 1;
 }
 
