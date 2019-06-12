@@ -2162,7 +2162,9 @@ body.menu-is-open {
   width: 9rem;
   border-radius: 50%;
   background-color: #793ea5;
-  background-image: url(../images/icons/icon-play.svg);
+background-image: url(../assets/pictures/icon-play.svg);
+  
+
   background-repeat: no-repeat;
   background-position: 55% center;
   background-size: 24px 27px;
