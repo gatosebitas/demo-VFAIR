@@ -3968,7 +3968,16 @@ body, html {
   top: 0; left: 0; bottom: 0; right: 0;
   width: 300px;
   height: 500px;
-  background: rgba(3,3,3,.7);
+  background: rgba(3,3,3,.8);
+  overflow: hidden;
+}
+.mobile-screen1{
+  position: absolute;
+  margin: auto;
+  top: 0; left: 0; bottom: 0; right: 0;
+  width: 350px;
+  height: 675px;
+  background: rgba(3,3,3,.9);
   overflow: hidden;
 }
 
@@ -3983,7 +3992,7 @@ body, html {
 
 h3{
   margin: 0;
-  padding: 10px 0;
+  padding: 20px 0;
   text-align: center;
   font-weight: 300;
   font-size: 21px;
@@ -4010,7 +4019,7 @@ h3{
 
 form{
   position: absolute;
-  bottom: 50px;
+  bottom: 10px;
   width: 100%;
 }
 
@@ -4116,5 +4125,3 @@ a{
   margin: auto;
   background: rgba(255,255,255,.5);
 }
-
-
