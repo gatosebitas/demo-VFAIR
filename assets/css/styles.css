@@ -237,29 +237,29 @@ html, body {
 
 .stand1{
 position:absolute;  
-top: 388%;
-left : 32%;
+top: 320px;
+left : 300px;
 z-index: 1;
 }
 
 .stand2{
 position:absolute;  
-top: 385%;
-left : 67%;
+top: 380px;
+left : 310px;
 z-index: 1;
 }
 
 .stand3{
 position:absolute;  
-top: 740%;
-left : 20%;
+top: 320px;
+left : 370px;
 z-index: 1;
 }
 
 .stand4{
 position:absolute;  
-top: 740%;
-left : 81%;
+top: 380px;
+left : 380px;
 z-index: 1;
 }
 
