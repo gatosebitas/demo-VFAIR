@@ -973,6 +973,7 @@ input[type="button"].btn--primary {
   color: #FFFFFF;
 }
 
+
 .btn.btn--primary:hover,
 button.btn--primary:hover,
 input[type="submit"].btn--primary:hover,
@@ -3940,12 +3941,6 @@ footer a {
 
 /*# sourceMappingURL=main.css.map */
 
-
-
-
-
-
-
 body, html { 
   box-shadow: 2px 2px 10px #700191;
   margin: 0;
@@ -3967,8 +3962,8 @@ body, html {
   margin: auto;
   top: 0; left: 0; bottom: 0; right: 0;
   width: 300px;
-  height: 500px;
-  background: rgba(3,3,3,.8);
+  height: 475px;
+  background: rgba(3,3,3,.9);
   overflow: hidden;
 }
 .mobile-screen1{
@@ -3982,7 +3977,7 @@ body, html {
 }
 
 .header{
-  position: relative;
+  position: absolute;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -3992,29 +3987,12 @@ body, html {
 
 h3{
   margin: 0;
-  padding: 20px 0;
+  padding: 0px 0;
   text-align: center;
   font-weight: 300;
   font-size: 21px;
   font-family: 'Open Sans', sans-serif;
   color: rgba(255,255,255,.5);
-}
-
-.logo{
-  position: relative;
-  top: 30px;
-  width: 150px;
-  height: 150px;
-  margin: auto;
-  background: url(https://s10.postimg.org/z6xqdowix/imageedit_1_8168502978.gif) no-repeat center; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  -webkit-transition: all .2s ease-in-out;
-  -moz-transition: all .2s ease-in-out;
-  -o-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
 }
 
 form{
@@ -4125,3 +4103,4 @@ a{
   margin: auto;
   background: rgba(255,255,255,.5);
 }
+

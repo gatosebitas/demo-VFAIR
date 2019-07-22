@@ -166,7 +166,8 @@ figure {
 
 img {
   vertical-align: middle;
-  border-style: none; }
+  border-style: none; 
+}
 
 svg {
   overflow: hidden;
@@ -2171,7 +2172,11 @@ fieldset:disabled a.btn {
 .btn-warning {
   color: #212529;
   background-color: #ffc107;
-  border-color: #ffc107; }
+  border-color: #ffc107;
+  top: 100px;
+  left: 100px;
+   }
+
   .btn-warning:hover {
     color: #212529;
     background-color: #e0a800;
@@ -10044,3 +10049,4 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
